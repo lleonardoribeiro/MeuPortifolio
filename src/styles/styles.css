@@ -1,0 +1,21 @@
+@import url(header.css);
+@import url(hero.css);
+@import url(about.css);
+@import url(skills.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Code Pro", monospace;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+}
+
+ body {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  overflow-x: hidden;
+}

@@ -1,0 +1,60 @@
+
+
+header {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    height: 48px;
+    background-color: rgba(0, 0, 0, 0.184);
+    z-index: 5;
+}
+
+.logo {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+    font-family: "Source Code Pro", monospace;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+header nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg,rgba(153, 0, 255, 1) 0%, rgba(84, 89, 255, 1) 48%, rgba(0, 200, 255, 1) 88%);
+    transition: width 0.5s ease;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+}
+
+header nav ul li:hover {
+    scale: 1.01;
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.social-icons i:hover {
+    scale: 1.1;
+}

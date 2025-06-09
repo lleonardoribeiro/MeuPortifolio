@@ -1,0 +1,73 @@
+
+#about {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    scroll-margin-top: 60px;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(81, 0, 135, 0.3) 20%, rgba(19, 0, 32, 0.3) 100%);
+}
+
+#about h2 {
+    font-size: 40px;
+    font-family: "Orbitron", sans-serif;
+}
+
+#about h2 span{
+    background: linear-gradient(90deg,rgba(153, 0, 255, 1) 0%, rgba(84, 89, 255, 1) 48%, rgba(0, 200, 255, 1) 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-family: "Orbitron", sans-serif;
+    font-size: 40px;
+}
+
+.about-content {
+    display: flex;
+    margin: 50px 100px 0 100px; 
+    gap: 80px;
+    font-size: 22px;
+}
+
+.about-content p {
+    font-family: "Source Code Pro", monospace;
+}
+
+.about-img img {
+    width: 600px;
+    height: 430px;
+    border-radius: 40px;
+    border: solid 4px transparent;
+    background: 
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(90deg, rgba(153, 0, 255, 1), rgba(84, 89, 255, 1), rgba(0, 200, 255, 1)) border-box;
+}
+
+.cards {
+    display: flex;
+    width: 100vw;
+    padding: 0 100px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards h3 {
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+    font-weight: 200;
+}
+
+.cards h3 span {
+    font-family: "Orbitron", sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    padding-right: 15px;
+    background: linear-gradient(90deg,rgba(153, 0, 255, 1) 0%, rgba(84, 89, 255, 1) 48%, rgba(0, 200, 255, 1) 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
