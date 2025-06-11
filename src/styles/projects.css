@@ -1,0 +1,96 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 180vh;
+    width: 100vw;
+    align-items: center;
+    padding-top: 60px;
+    background: linear-gradient(0deg,rgba(19, 0, 32, 0.3) 0%, rgba(81, 0, 135, 0.3) 80%, rgba(81, 0, 135, 0.3) 100%);
+}
+
+.container h2 {
+    font-size: 40px;
+    font-family: "Orbitron", sans-serif;
+}
+
+.container h2 span{
+    background: linear-gradient(90deg,rgba(153, 0, 255, 1) 0%, rgba(84, 89, 255, 1) 48%, rgba(0, 200, 255, 1) 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-family: "Orbitron", sans-serif;
+    font-size: 40px;
+}
+
+.container p {
+    font-family: "Source Code Pro", monospace;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 100px;
+    justify-content: space-between;
+    padding-top: 50px;
+    max-width: calc(100vw - 200px);
+    box-sizing: border-box;
+}
+
+.project-card {
+    width: 326.6px;
+    height: 480px;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+}
+
+.project-card img {
+    width: 326.6px;
+    height: auto;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.project-card .projects-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px 20px 20px;
+    gap: 1px;
+}
+
+.projects-content h3 {
+    font-size: 24px;
+    background: linear-gradient(90deg,rgba(153, 0, 255, 1) 0%, rgba(84, 89, 255, 1) 48%, rgba(0, 200, 255, 1) 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.projects-content p {
+    text-align: center;
+    font-size: 15px;
+    font-weight: 100;
+    font-family: "Source Code Pro", monospace;
+    padding-top: 20px;
+}
+
+.projects-content p span {
+    font-weight: bold;
+}
+
+
+.link-project { 
+    display: flex;
+    font-family: "Source Code Pro", monospace;
+    justify-content: space-between;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.link-project div a {
+    text-decoration: underline;
+}

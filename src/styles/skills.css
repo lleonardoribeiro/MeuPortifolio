@@ -1,6 +1,47 @@
 
 #skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 100vh;
     width: 100vw;
     background: linear-gradient(180deg,rgba(19, 0, 32, 0.3) 0%, rgba(0, 0, 0, 0.6) 35%, rgba(81, 0, 135, 0.3) 100%);
+}
+
+#skills h2 {
+    margin-top: 60px;
+    font-size: 40px;
+    font-family: "Orbitron", sans-serif;
+}
+
+#skills h2 span{
+    background: linear-gradient(90deg,rgba(153, 0, 255, 1) 0%, rgba(84, 89, 255, 1) 48%, rgba(0, 200, 255, 1) 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    font-family: "Orbitron", sans-serif;
+    font-size: 40px;
+}
+
+#skills p {
+    font-family: "Source Code Pro", monospace;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#skills ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    gap: 50px;
+}
+
+#skills ul div {
+    display: flex;
+    gap: 120px;
+}
+
+#skills ul div li svg {
+    width: 150px;
+    height: auto;
 }

@@ -54,13 +54,54 @@
 }
 
 .content button {
-    margin-top: 20px;
-    background: linear-gradient(90deg,rgba(153, 0, 255, 1) 0%, rgba(84, 89, 255, 1) 48%, rgba(0, 200, 255, 1) 88%);
-    padding: 10px 30px;
-    color: #fff;
-    font-family: "Source Code Pro", monospace;
-    border: none;
-    border-radius: 30px;    
-    font-size: 24px;
-    font-weight: 500;
+  margin-top: 20px;
+  background: linear-gradient(90deg, rgba(153, 0, 255, 1) 0%, rgba(84, 89, 255, 1) 48%, rgba(0, 200, 255, 1) 88%);
+  padding: 10px 30px;
+  color: #fff;
+  font-family: "Source Code Pro", monospace;
+  border: none;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.content button::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  z-index: 0;
+  transition: width 0.5s ease-in-out;
+  border-radius: 30px;
+}
+
+.content button:hover::before {
+  width: 100%;
+}
+
+/* Texto com gradiente aplicado em span */
+.gradient-text {
+  position: relative;
+  z-index: 2;
+  transition: color 0.5s ease-in-out;
+}
+
+/* Ao hover, aplicar o gradiente ao texto */
+.content button:hover .gradient-text {
+  background: linear-gradient(90deg, rgba(153, 0, 255, 1) 0%, rgba(84, 89, 255, 1) 48%, rgba(0, 200, 255, 1) 88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  transition-delay: 0.5s; /* só muda após a animação do fundo */
+}
+
+.top-button {
+    background-color: aqua;
 }
