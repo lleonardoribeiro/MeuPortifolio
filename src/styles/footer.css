@@ -1,0 +1,85 @@
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vh;
+    background: rgba(0, 0, 0, 0);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0 50px 0;
+    border-bottom: solid 1px transparent;
+    border-top: solid 1px transparent;
+    background: 
+    linear-gradient(#000, #000) padding-box,
+    linear-gradient(90deg, rgba(153, 0, 255, 0.3), rgba(84, 89, 255, 0.3), rgba(0, 200, 255, 0.3)) border-box;
+    margin: 0px 100px 40px 100px;
+}
+
+.footer-content img {
+    width: 120px;
+}
+
+.footer-contact {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.footer-contact a {
+    cursor: pointer;
+    font-weight: 100;
+    color: #bababa;
+}
+
+.footer-contact a:hover {
+    scale: 1.02;
+}
+
+.footer-icons {
+    font-size: 30px;
+    padding-left: 30px;
+}
+
+.footer-icons i {
+    cursor: pointer;
+    color: #bababa;
+}
+
+.footer-icons i:hover {
+    scale: 1.03;
+}
+
+.footer-botton {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 100px 0px 100px;
+}
+
+.footer-botton nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.footer-botton nav ul li a {
+    color: #bababa;
+}
+
+.footer-nav ul li:hover {
+    scale: 1.03
+}
+
+.footer-botton p {
+    color: #bababa;
+}
+
+.footer-botton p span {
+    background: linear-gradient(90deg,rgba(153, 0, 255, 1) 0%, rgba(84, 89, 255, 1) 48%, rgba(0, 200, 255, 1) 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
