@@ -36,21 +36,17 @@
     color: #bababa;
 }
 
-.footer-contact a:hover {
-    scale: 1.02;
-}
-
 .footer-icons {
     font-size: 30px;
     padding-left: 30px;
 }
 
-.footer-icons i {
+.footer-icons a i {
     cursor: pointer;
     color: #bababa;
 }
 
-.footer-icons i:hover {
+.footer-icons a i:hover {
     scale: 1.03;
 }
 

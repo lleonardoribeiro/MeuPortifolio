@@ -51,9 +51,10 @@
     font-size: 32px;
     font-family: "Source Code Pro", monospace;
     padding-top: 10px;
+    margin-bottom: 30px;
 }
 
-.content button {
+.content a {
   margin-top: 20px;
   background: linear-gradient(90deg, rgba(153, 0, 255, 1) 0%, rgba(84, 89, 255, 1) 48%, rgba(0, 200, 255, 1) 88%);
   padding: 10px 30px;
@@ -70,7 +71,7 @@
   z-index: 1;
 }
 
-.content button::before {
+.content a::before {
   content: "";
   position: absolute;
   top: 0; left: 0;
@@ -82,7 +83,7 @@
   border-radius: 30px;
 }
 
-.content button:hover::before {
+.content a:hover::before {
   width: 100%;
 }
 
@@ -94,7 +95,7 @@
 }
 
 /* Ao hover, aplicar o gradiente ao texto */
-.content button:hover .gradient-text {
+.content a:hover .gradient-text {
   background: linear-gradient(90deg, rgba(153, 0, 255, 1) 0%, rgba(84, 89, 255, 1) 48%, rgba(0, 200, 255, 1) 88%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
