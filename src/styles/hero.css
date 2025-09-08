@@ -106,3 +106,66 @@
 .top-button {
     background-color: aqua;
 }
+
+@media (max-width: 900px) {
+  #hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    height: auto; /* para ajustar altura conforme conteúdo */
+    justify-content: center;
+  }
+
+  .perfil {
+    order: -1;
+  }
+
+   .perfil img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 30px;
+    padding-top: 8vh;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+
+  .content h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+  .content p {
+    font-size: 24px;
+    text-align: center;
+  }
+  .content a {
+    font-size: 30px;
+    padding: 12px 25px;
+    width: 60%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+/* Smartphones (largura até 600px) */
+@media (max-width: 600px) {
+  #hero {
+    padding: 20px 10px;
+  }
+  .perfil img {
+    max-width: 300px;
+  }
+  .content h1 {
+    font-size: 36px;
+  }
+  .content p {
+    font-size: 18px;
+  }
+  .content a {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}

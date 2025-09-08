@@ -54,3 +54,17 @@ header nav ul li a:hover::after {
 .social-icons i:hover {
     scale: 1.1;
 }
+
+@media (max-width: 900px) {
+
+    header {
+        display: flex;
+        justify-content: space-between; /* mantém espaço entre elementos */
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .navlist {
+        display: none;
+    }
+}

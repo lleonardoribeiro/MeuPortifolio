@@ -45,3 +45,95 @@
     width: 150px;
     height: auto;
 }
+
+/* Responsividade para telas médias (tablets) */
+@media (max-width: 1024px) {
+    #skills h2 {
+        font-size: 32px;
+        margin-top: 40px;
+    }
+
+    #skills h2 span {
+        font-size: 32px;
+    }
+
+    #skills p {
+        font-size: 18px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    #skills ul div {
+        gap: 60px;
+    }
+
+    #skills ul div li svg {
+        width: 120px;
+    }
+}
+
+/* Responsividade para telas pequenas (celulares) */
+@media (max-width: 768px) {
+    #skills {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    #skills h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #skills h2 span {
+        font-size: 28px;
+    }
+
+    #skills p {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    #skills ul {
+        padding-top: 50px;
+        gap: 30px;
+    }
+
+    /* Aqui usamos GRID para ter 2 colunas */
+    #skills ul div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        justify-items: center;
+    }
+
+    #skills ul div li svg {
+        width: 90px;
+    }
+}
+
+/* Responsividade para telas muito pequenas (menos de 480px) */
+@media (max-width: 480px) {
+    #skills h2 {
+        font-size: 28px;
+    }
+
+    #skills h2 span {
+        font-size: 28px;
+    }
+
+    #skills p {
+        font-size: 16px;
+    }
+
+    /* Continua sendo 2 colunas mesmo em telas bem pequenas */
+    #skills ul div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    #skills ul div li svg {
+        width: 70px;
+    }
+}
+
