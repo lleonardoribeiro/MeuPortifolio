@@ -48,6 +48,11 @@
 
 /* Responsividade para telas médias (tablets) */
 @media (max-width: 1024px) {
+    #skills {
+        height: auto;
+        margin-bottom: 5vh;
+    }
+
     #skills h2 {
         font-size: 32px;
         margin-top: 40px;
